@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Esta fuente es temporal, 
+    podemos cambiarla sin problema*/
+}
+
+body {
+    background-image:  #c21f1f url ('fondolibros2.jpg');
+    background-size: cover;
+}
+   
+   
+   .login-modal {
+        width: 300px; /* O cualquier otra medida que prefieras */
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.8);
+        color: white;
+        border-radius: 5px; /* Da bordes redondeados al modal */
+    }
+    
+.login-modal {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    width: 300px;
+    margin: auto;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color:#3b0269;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+/* Efecto de botón */ 
+transition: transform 0.3s; box-shadow: 0.3s;
+&:hover{
+   background-color: #d5afee;
+   transform: scale(0.95);
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register-link a {
+    color: #fff;
+    text-decoration: none;
+}

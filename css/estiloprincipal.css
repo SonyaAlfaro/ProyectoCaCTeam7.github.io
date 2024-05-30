@@ -1,0 +1,377 @@
+/*Hoja de estilos
+Versión 1.0*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Esta fuente es temporal, 
+    podemos cambiarla sin problema*/
+}
+
+body {
+    background-color: #f0d1f7;
+    color:#000000;
+}
+/* estilo wsp*/
+
+.btn-wsp {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    bottom: 25px;
+    right: 25px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 35px;
+    z-index: 4000;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+    transition: all 300ms ease;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    text-decoration: none;
+}
+
+.btn-wsp:hover {
+    color: #25d366;
+    background: white;
+    text-decoration: none;
+}
+
+/* Header */
+.header {
+    background-color: #460646; /* Los colores y demás también lo podemos cambiar*/
+    color: #f0f8ff;
+    height: 15vh;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    .navegacion{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 1.3rem;
+
+        /* Logo */
+        .anclalogo{
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        /* Lista de Navegación principal */
+        .listaNav {
+            list-style: none;
+            display: flex;
+            align-items: space-between;
+
+            .listaItem{
+                margin: 20px;
+
+                /* Botones */
+                .linkNav{
+                    color:#ffffff;
+                    text-decoration: none;
+                    font-weight: 700;
+                    font-size: 1rem;
+                    padding: 0.5rem 1rem;
+
+                    /*Efecto del botón*/
+                    transition: transform 0.3s; box-shadow: 0.3s;
+                    &:hover{
+                        transform: scale(0.95);
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+
+        /* Registro e Inicio de Sesión */        
+        .logIn {
+            list-style: none;
+            display: flex;
+            align-items: last baseline;
+            margin-left: 0;
+
+            .logItem{
+                margin: 10px;
+                
+                .linkLog{
+                color:#ffffff;
+                text-decoration: none;
+                font-weight: 400;
+                font-size: 0.7rem;
+                padding: 0.5rem 1rem;
+
+                transition: transform 0.3s; box-shadow: 0.3s;
+                &:hover{
+                    transform: scale(0.95);
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+                    border-radius: 5px;
+                }
+            }
+        }
+
+        /*Botón de Inicio de Sesión*/
+            .linkLog.iniciarSesión{
+            background-color: #ffffff;
+            color: #3b0269;
+            border-radius: 5px;
+
+            /* Efecto de botón */ 
+            transition: transform 0.3s; box-shadow: 0.3s;
+             &:hover{
+                background-color: #d5afee;
+                transform: scale(0.95);
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            }
+        }
+     }
+
+    }
+}
+
+/*banner*/
+.banner {
+    margin-top: -70px; /* Desplaza el banner hacia arriba */
+    position: relative; /* Posición relativa para poder posicionar elementos hijos absolutamente */
+    overflow: hidden; /* Evita que las imágenes más grandes se desborden del banner */
+    height: 300px;
+    }
+
+.img-banner {
+    .img-banner {
+        width: 100%; 
+        height: 100%; 
+        object-fit: cover; 
+        position: absolute; 
+        top: 0; 
+        left: 0;
+    }
+}
+
+.contenido-banner {
+    width: 100%;
+    color: white;
+    text-align: center;
+    position: absolute;
+    z-index: 1500;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 80px;
+    font-weight: bold;
+    font-family: 'Lucida Sans Unicode';
+
+}
+
+
+/* estilo main*/
+.columna {
+    width: 100%;
+}
+
+.grupo-color .contenedor {
+    background: #503459;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.titulo-principal {
+    margin: 15px;
+    font-size: 45px;
+    font-family: 'Satisfy';
+    font-weight: 100;
+}
+
+.titulo-columna {
+    font-size: 20px;
+    font-family: 'Lucida Sans Unicode', sans-serif;
+}
+
+.main-descripcion {/*imagen biografia*/
+    padding: 15px;
+    border-radius: 2px;
+}
+
+.grupo-libros h2 {
+    font-size: 50px; 
+    color: #503459;
+    text-align: center;
+}
+
+.nombre-libro {
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: #503459;
+}
+
+.nombre-libro-img {
+    margin: auto;
+    max-width: 200px; 
+    border-radius: 2px;
+}
+
+.container {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+    margin: 0 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section .titulo-libros {
+    font-size: 50px; 
+    color: #503459;
+    text-align: center;
+}
+
+/* Estilos footer */
+.pie-pagina{
+
+    background: #503459;
+    color: white;
+    padding:15px;
+    padding-top:15px;
+    padding-bottom:15px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+.h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.red-social[class*="icon-"]{ 
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+ .fa-facebook{
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.red-social a:hover {
+    color: #fcc7f5;
+     text-decoration: none;
+    margin-right: 10px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+ }
+ .fa-instagram{
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+ }
+
+ .fa-twitter{
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+ }
+
+ .fa-youtube{
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+ }
+
+ .grupo2 {
+    clear: both;
+    color: white;
+    background: #503459;
+    text-align: center;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para MOBILE y TABLET */ 
+@media (max-width: 768px){ 
+
+    /* Entiendo que a partir de acá esta configuración debería ayudar a mantener el tamaño inicial del encabezado
+    y modificar el contenido, pero creo que hay algo mal */
+
+    .header{
+        height: initial;
+
+        .navegacion{
+            margin-left: 10px;
+            margin-right: 10px;
+            flex-direction: column;
+            row-gap: 20px;
+
+            .anclalogo{
+                font-weight: 700;
+                font-size: 1.2rem;
+            }
+
+            listaNav{
+                padding: initial;
+                listaItem{
+                    linkNav{
+                        font-weight: 300;
+                        margin-right: initial;
+                        font-size: 1rem;
+                        padding: 0.2rem;
+                    }
+                }
+             }
+
+             logIn{
+                padding: initial;
+
+                logItem{
+                    linkLog{
+                        font-weight: 300;
+                        margin-right: initial;
+                        font-size: 1rem;
+                        padding: 0.2rem;
+                    }
+                }
+             }
+
+
+        }
+    }
+} 
