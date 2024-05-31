@@ -1,31 +1,22 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Esta fuente es temporal, 
-    podemos cambiarla sin problema*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Esta fuente es temporal, podemos cambiarla sin problema */
 }
 
-body {
-    background-image:  #c21f1f url ('fondolibros2.jpg');
-    background-size: cover;
+body.bodyRegistrarse {
+    background-image: url('../img/fondolibros2.jpg');
+    background-repeat: repeat;
 }
-   
-   
-   .login-modal {
-        width: 300px; /* O cualquier otra medida que prefieras */
-        padding: 20px;
-        background: rgba(0, 0, 0, 0.8);
-        color: white;
-        border-radius: 5px; /* Da bordes redondeados al modal */
-    }
-    
+
 .login-modal {
+    width: 300px;
+    padding: 25px;
     background: rgba(0, 0, 0, 0.8);
     color: white;
-    padding: 20px;
-    width: 300px;
-    margin: auto;
+    border-radius: 5px;
+    margin: 50px auto;
 }
 
 .input-group input {
@@ -36,22 +27,41 @@ body {
     border-radius: 5px;
 }
 
+
 .login-btn {
     width: 100%;
     padding: 10px;
-    background-color:#3b0269;
+    background-color: #3b0269;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    
-/* Efecto de botón */ 
-transition: transform 0.3s; box-shadow: 0.3s;
-&:hover{
-   background-color: #d5afee;
-   transform: scale(0.95);
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
+
+.login-btn:hover {
+    background-color: #d5afee;
+    transform: scale(0.95);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.terminos {
+    font-size: 0.8rem;
+     display: flex;
+    align-items: center;
+     margin-bottom: 20px;
+    .textoCheck{
+    margin-left: 10px
+     }  
+}
+
+.error-text {
+        color: #ff0000;
+        font-size: 0.8rem;
+        margin-top:0px;
+        margin-bottom: 10px;
+}
+button:disabled {
+    background-color: #ccc;
 }
 
 .register-link {
@@ -63,3 +73,5 @@ transition: transform 0.3s; box-shadow: 0.3s;
     color: #fff;
     text-decoration: none;
 }
+
+
